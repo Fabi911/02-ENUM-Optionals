@@ -2,31 +2,21 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        DaysOfWeek day = DaysOfWeek.TUESDAY;
+        DaysOfWeek day = DaysOfWeek.WEDNESDAY;
         switch (day) {
             case MONDAY:
-                System.out.println("Monday");
-                break;
             case TUESDAY:
-                System.out.println("Tuesday");
-                break;
             case WEDNESDAY:
-                System.out.println("Wednesday");
-                break;
             case THURSDAY:
-                System.out.println("Thursday");
-                break;
             case FRIDAY:
-                System.out.println("Friday");
+                System.out.println("Weeekday");
                 break;
             case SATURDAY:
-                System.out.println("Saturday");
-                break;
             case SUNDAY:
-                System.out.println("Sunday");
+                System.out.println("Weekend");
                 break;
             default:
-                System.out.println("Weekend");
+                System.out.println("Invalid day");
                 break;
         }
         PersonRepository personRepository = new PersonRepository(new ArrayList<>());
